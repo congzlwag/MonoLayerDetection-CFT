@@ -1,0 +1,17 @@
+# A dataset on 2D material monolayer. Collected by Heinz Lab @ Stanford University
+# At each region, there are two images: Photoluminescence (PL) and white-light (WL), i.e. in visible range. They have been manually aligned based on the coordinates on the translation stage
+# parent
+# ├── yolov5
+# └── datasets
+#     └── PLVIS2D
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: ../datasets/PLVIS2D # dataset root dir
+train: images/train/PL # relative to 'path'
+val: images/val/PL # relative to 'path'
+test: images/test/PL # relative to 'path'
+label: labels
+
+# Classes
+nc: 2 # number of classes
+names: ['Dirt', 'ML']
